@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AstroFacts</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="logo">श्री</div>
+        <h1>AstroFacts</h1>
+        <nav class="nav-links">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <button class="menu-btn" aria-label="Toggle menu">&#9776;</button>
+    </header>
+
+    <div class="side-menu">
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#zodic-sign">Zodic Sign</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- Know About Section -->
+     <section id="about">
+    <section class="know-about">
+        <div class="container">
+            <img src="images/verma.jpg" alt="Astrologer Verma" class="profile-img">
+            <div class="about-text">
+                <h2>Know About Suryakant Verma</h2>
+                <p>
+                    Welcome to Astrologer SK Verma, your trusted guide in the realm of astrology. Our mission is to provide insightful, accurate, and personalized astrological services that empower you to navigate life’s complexities with confidence and clarity.
+                    <br><br>
+                    Founded by the renowned astrologer SK Verma, our practice combines traditional astrological wisdom with modern analytical techniques. With years of experience and a deep understanding of celestial influences, we offer a range of services designed to address various aspects of your life, from personal growth and relationships to career and finance.
+                    <br><br>
+                    At Astrologer SK Verma, we believe that astrology is not just about predicting the future but also about understanding the present and harnessing the potential within you. Our goal is to provide you with actionable insights and guidance that help you make informed decisions and achieve your desired outcomes.
+                    <br><br>
+                    Explore our services, which include detailed birth chart analyses, personalized forecasts, and remedial solutions, and take the first step toward a more enlightened and fulfilling journey. Connect with us today and discover how astrology can illuminate your path to success and happiness.
+                </p>
+            </div>
+        </div>
+    </section>
+    </section>
+
+    <!-- Service Section -->
+     <section id="services">
+    <section class="services">
+        <h2>Services</h2>
+        <p>Compelling problems of your life * Family Disputes * Compatibility problems * Love marriage * Divorce * Job * Business * Foreign settlement * Health problem * Children behavior problem * Any acute problem which needs urgent solution</p>
+        <div class="service-grid">
+            <!-- Service Items -->
+            <div class="service-item">Vastu Shastra</div>
+            <div class="service-item">Birth Journal</div>
+            <div class="service-item">Kundali Dosh</div>
+    
+            <!-- Centered Astrologer Image -->
+            <div class="center-image">
+                <img src="images/astrolger-ujjain.png" alt="Astrologer Verma">
+            </div>
+    
+            <!-- More Service Items -->
+            <div class="service-item">Kundali Milan</div>
+            <div class="service-item">Gems Store</div>
+            <div class="service-item">Property Astrology</div>
+            <div class="service-item">Manglik Dosha</div>
+            <div class="service-item">Career Astrology</div>
+        </div>
+    </section>
+</section>
+
+    <!-- Zodiac Sign Section -->
+    <section id="zodiac-sign">
+    <section class="zodiac-sign">
+        <h2>Zodiac Signs</h2>
+        <div class="zodiac-layout">
+            <!-- Left Column -->
+            <div class="zodiac-column">
+                <div class="zodiac-sign-item">Aries <br> (March 21 - April 19)</div>
+                <div class="zodiac-sign-item">Taurus <br> (April 20 - May 20)</div>
+                <div class="zodiac-sign-item">Gemini <br> (May 21 - June 20)</div>
+                <div class="zodiac-sign-item">Cancer <br> (June 21 - July 22)</div>
+                <div class="zodiac-sign-item">Leo <br> (July 23 - August 22)</div>
+                <div class="zodiac-sign-item">Virgo <br> (August 23 - September 22)</div>
+            </div>
+
+            <!-- Zodiac Image in the Center -->
+            <img class="zodiac-img" src="images/zodiac.png" alt="Zodiac Image">
+
+            <!-- Right Column -->
+            <div class="zodiac-column">
+                <div class="zodiac-sign-item">Libra <br> (September 23 - October 22)</div>
+                <div class="zodiac-sign-item">Scorpio <br> (October 23 - November 21)</div>
+                <div class="zodiac-sign-item">Sagittarius <br> (November 22 - December 21)</div>
+                <div class="zodiac-sign-item">Capricorn <br> (December 22 - January 19)</div>
+                <div class="zodiac-sign-item">Aquarius <br> (January 20 - February 18)</div>
+                <div class="zodiac-sign-item">Pisces <br> (February 19 - March 20)</div>
+            </div>
+        </div>
+    </section>
+</section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>Contact us at: info@astrofacts.com | Phone: +91 1234567890</p>
+    </footer>
+
+    <!-- JavaScript for Zodiac Animation Control and Side Menu -->
+    <script>
+        // Zodiac Image Animation Control
+        const zodiacImg = document.querySelector('.zodiac-img');
+
+        zodiacImg.addEventListener('mouseover', () => {
+            zodiacImg.style.animationPlayState = 'paused';
+        });
+
+        zodiacImg.addEventListener('mouseout', () => {
+            zodiacImg.style.animationPlayState = 'running';
+        });
+
+        // Side Menu Toggle
+        document.addEventListener('DOMContentLoaded', () => {
+            const menuBtn = document.querySelector('.menu-btn');
+            const sideMenu = document.querySelector('.side-menu');
+
+            menuBtn.addEventListener('click', () => {
+                sideMenu.classList.toggle('show');
+            });
+        });
+    </script>
+</body>
+</html>
